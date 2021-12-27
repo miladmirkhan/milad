@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:milad/home_screen/homeScreen.dart';
 import 'package:milad/login_scren/loginScreen.dart';
+import 'package:milad/data_screen/dataScreen.dart';
 
 class mainApp extends StatelessWidget {
   const mainApp({ Key? key }) : super(key: key);
@@ -23,6 +24,7 @@ Widget build(BuildContext context) {
       routes: {
         '/': (context) => homeApp(),
         '/login':(context)=> loginScreen(),
+        '/dataScreen':(context)=> dataScreen(),
         
       },
     );
