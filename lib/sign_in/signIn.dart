@@ -30,12 +30,11 @@ Text(" "),
                 ),
                 label: Text('sign Up'),
               ),
-
-Text('if you have an account you can just Log In',
-style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200)
-),
-Text(" "),
-              TextButton(
+              Text(" "),
+            Text('if you have an account you can just Log In',
+            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200)
+            ),
+            TextButton(
             autofocus: true,
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, '/login');
