@@ -9,18 +9,26 @@ class homeApp extends StatelessWidget {
      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
               'Welcome to MyApp',
+              
               style: TextStyle(fontSize: 45, fontWeight: FontWeight.w400),
             ),
             
             ElevatedButton(
+            autofocus: true,
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, '/login');
                 },
-                child: Text('login Screen'))
+                child: Text('login Screen')),
+                
+                TextButton(
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/privacyPolicy');
+                },
+                child: Text('Privacy Policy'))
           ],
         ),
       ),
