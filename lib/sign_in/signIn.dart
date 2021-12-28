@@ -6,13 +6,13 @@ class signIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-         mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+      body: Center(
+         child:Column(
         children: [
           Text("sign Up",
           style: TextStyle(fontSize: 45, fontWeight: FontWeight.w400),
             ),
+            
            ElevatedButton.icon(
                 onPressed: () {
                   Navigator.pushNamed(context, '/dataScreen');
@@ -23,14 +23,19 @@ class signIn extends StatelessWidget {
                 label: Text('sign Up'),
               ),
 
+Text('if you have an account you can just Log In',
+style: TextStyle(fontSize: 15, fontWeight: FontWeight.w200)
+),
+
               TextButton(
             autofocus: true,
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, '/login');
                 },
-                child: Text('login Screen')),
+                child: Text('log in')),
         ],
       ),
+    )
     );
       
     

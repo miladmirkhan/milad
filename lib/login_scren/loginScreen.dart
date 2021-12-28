@@ -38,10 +38,7 @@ class _loginScreenState extends State<loginScreen> {
               ),
               ElevatedButton.icon(
                 onPressed: () {
-                  setState(() {
-                    name = userNameController.value.text;
-                    password = passwordController.value.text;
-                  });
+                 Navigator.pushNamed(context, '/dataScreen');
                 },
                 icon: Icon(
                   Icons.login,
