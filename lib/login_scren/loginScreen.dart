@@ -9,11 +9,7 @@ class loginScreen extends StatefulWidget {
 }
 
 class _loginScreenState extends State<loginScreen> {
-  String name = 'user name';
-  String? password;
 
-  TextEditingController userNameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -21,21 +17,20 @@ class _loginScreenState extends State<loginScreen> {
       appBar: AppBar(),
       body: Column(
         children: [
-          Text('Welcome $name'),
+          Text('Welcome',style:TextStyle(fontSize: 45, fontWeight: FontWeight.w400) ,),
           Form(
               child: Column(
             children: [
               //user name
               TextFormField(
-                controller: userNameController,
                 keyboardType: TextInputType.emailAddress,
               ),
 
               //passsword
               TextFormField(
-                controller: passwordController,
                 obscureText: true,
               ),
+              Text(" "),
               ElevatedButton.icon(
                 onPressed: () {
                  Navigator.pushNamed(context, '/dataScreen');

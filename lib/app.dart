@@ -26,6 +26,7 @@ Widget build(BuildContext context) {
        color: Colors.purpleAccent[895],
      ),
           )),
+          //the Routes
       initialRoute: '/',
       routes: {
         '/': (context) => homeApp(),
